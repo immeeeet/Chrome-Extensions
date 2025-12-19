@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        width: 300px;
+        padding: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        opacity: 0.9;
+        margin: 0 0 20px 0;
+      }
+
+      .info-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        backdrop-filter: blur(10px);
+      }
+
+      .info-box h3 {
+        margin: 0 0 8px 0;
+        font-size: 15px;
+      }
+
+      .info-box p {
+        margin: 0;
+        font-size: 13px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .stat-card {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 12px;
+        border-radius: 6px;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .stat-label {
+        font-size: 11px;
+        opacity: 0.8;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: white;
+        color: #667eea;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+      </svg>
+      Smart Pause
+    </h1>
+
+    <p>Control auto-pause for each YouTube video individually</p>
+
+    <div class="info-box">
+      <h3>📌 How to use:</h3>
+      <p>
+        Click the toggle button in the YouTube player controls to enable/disable
+        auto-pause for the current video.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>✨ Features:</h3>
+      <p>
+        • Per-video control<br />• Remembers your preferences<br />• Seamless
+        playback
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number" id="enabled-count">0</div>
+        <div class="stat-label">Videos with auto-pause enabled</div>
+      </div>
+    </div>
+
+    <button id="clear-btn" style="margin-top: 15px">
+      Clear All Preferences
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

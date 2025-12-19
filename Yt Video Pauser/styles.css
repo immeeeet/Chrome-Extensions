@@ -1,0 +1,38 @@
+.smart-pause-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: "YouTube Sans", "Roboto", sans-serif;
+  transition: all 0.2s ease;
+  margin-right: 4px;
+  height: 36px;
+}
+
+.smart-pause-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.smart-pause-btn.disabled {
+  opacity: 0.7;
+}
+
+.smart-pause-btn.disabled:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.smart-pause-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.smart-pause-btn .toggle-text {
+  font-weight: 400;
+  font-size: 11px;
+}
