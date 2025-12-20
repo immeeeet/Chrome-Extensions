@@ -35,4 +35,4 @@ BUTT! What if user's listening to music or podcast, I understand this problem an
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git => Don't change the lines or words, just make it pretty
+   git clone https://github.com/your-username/your-repo-name.git
